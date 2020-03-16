@@ -12,7 +12,7 @@ echo COMMIT HASH: %COMMIT_HASH%
 pushd "%~dp0/.."
 
 :: restore NuGet packages
-Scripts\nuget.exe restore JenkinsTry.sln
+nuget.exe restore JenkinsTry.sln
 if %errorlevel% neq 0 exit /b %errorlevel%
 
 
